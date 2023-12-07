@@ -30,8 +30,14 @@
   border-radius: 8px;
   background-color: rgb(173, 14, 14);
 }
+.filter label{
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-right: 10px;
 
-.filter input {
+}
+.filter select {
   border: none;
   border-radius: 20px;
   font-size: 14px;

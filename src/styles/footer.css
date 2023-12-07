@@ -1,0 +1,10 @@
+.footer {
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(173, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: whitesmoke;
+  }

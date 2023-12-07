@@ -1,27 +1,45 @@
-import "./App.css";
-import CheckboxLabels from "./CheckboxLabels";
+import "./styles/App.css";
+import Header from "./components/Header.JSX";
+import Footer from "./components/Footer";
+import Contents from "./components/Content";
+import { useState } from "react";
 
 function App() {
+  const [list, setList] = useState([]);
+
+  const [quantity, setQuantity] = useState(0);
+  const [item, setItem] = useState("");
+
+  const handelAdd = () => {
+    const newInfo = { quantity: quantity, item: item, packed: false };
+    console.log(newInfo);
+    console.log(list.concat(newInfo));
+    setList(list.concat(newInfo));
+ 
+  };
+  const handleChangeQ = (e) => {
+    const newInfo = e.target.value;
+    console.log(newInfo);
+    setQuantity(newInfo);
+  };
+  const handleChangeI = (e) => {
+    const newInfo = e.target.value;
+    console.log(newInfo);
+    setItem(newInfo);
+  };
   return (
     <>
       <div className="application">
-        <div className="header">
-          <img className="monkey" src="src\assets\logo.jpg" alt="monkey"></img>
-        </div>
-        <div className="content">
-          <div className="form">
-            <p>What do you need for your trip?</p>
-            <input type="text" placeholder="Quantity" />
-            <input type="text" placeholder="Item name" />
-            <button>Add</button>
-          </div>
-          <div className="list">
-            <CheckboxLabels />
-          </div>
-        </div>
-        <div className="footer">
-          <p>Get packing!!</p>
-        </div>
+        <Header />
+        <Contents
+          onAdd={handelAdd}
+          valueQ={quantity}
+          valueI={item}
+          onInfoChange={handleChangeI}
+          onQuantityChange={handleChangeQ}
+          list={list}
+        />
+        <Footer />
       </div>
     </>
   );
