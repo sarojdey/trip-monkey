@@ -1,0 +1,71 @@
+.application {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(42, 42, 42);
+  height: 100vh;
+  width: 100%;
+}
+.header {
+  height: 12vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monkey {
+  height: 70px;
+  width: auto;
+}
+.footer {
+  height: 7vh;
+  width: 100%;
+  background-color: rgb(173, 14, 14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: whitesmoke;
+}
+.content {
+  height: 100%;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 10px;
+  align-items: baseline;
+  font-family: "Roboto Condensed", sans-serif;
+  color: whitesmoke;
+}
+.form p {
+  margin-right: 50px;
+}
+.form input {
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 0 20px;
+  height: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-right: 10px;
+}
+.form button {
+  height: 40px;
+  width: 70px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: whitesmoke;
+  background-color: rgb(173, 14, 14);
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+}
+
