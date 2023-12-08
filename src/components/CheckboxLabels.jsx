@@ -42,7 +42,7 @@ const CheckboxLabels = ({
                     onChange={() => handleChecked(index)}
                   />
                   <label htmlFor={`checkbox-${index}`}>
-                    {i.quantity}x {i.item}
+                    {i.item} - {i.quantity}
                   </label>
                 </div>
               );
