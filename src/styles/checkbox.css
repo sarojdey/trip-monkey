@@ -2,6 +2,8 @@
   display: flex;
   margin: 50px;
   column-gap: 20px;
+ 
+ 
 }
 .scrollbar {
   color: whitesmoke;
@@ -23,12 +25,12 @@
 
 #scrollbar6::-webkit-scrollbar-track {
   border-radius: 8px;
-  background-color: whitesmoke;
+  background-color: rgb(62, 62, 62);
 }
 
 #scrollbar6::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background-color: rgb(173, 14, 14);
+  background-color: rgb(34, 34, 34);
 }
 .filter label{
   font-size: 20px;
@@ -58,4 +60,8 @@
   color: whitesmoke;
   background-color: rgb(173, 14, 14);
   margin-bottom: 10px;
+}
+
+.filter button:hover{
+  background-color: rgb(210, 17, 17);
 }

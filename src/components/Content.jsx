@@ -6,7 +6,12 @@ const Contents = ({
   valueQ,
   valueI,
   onInfoChange,
-  onQuantityChange,list
+  onQuantityChange,
+  list,
+  handleDelete,
+  handleChecked,
+  handleSortOptionChange,
+  sortOption,
 }) => {
   return (
     <div className="content">
@@ -28,7 +33,13 @@ const Contents = ({
         <button onClick={onAdd}>Add</button>
       </div>
       <div className="list">
-        <CheckboxLabels list={list}/>
+        <CheckboxLabels
+          list={list}
+          handleDelete={handleDelete}
+          handleChecked={handleChecked}
+          handleSortOptionChange={handleSortOptionChange}
+          sortOption={sortOption}
+        />
       </div>
     </div>
   );
